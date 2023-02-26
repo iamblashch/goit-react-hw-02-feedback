@@ -11,9 +11,9 @@ class App extends Component {
         bad: 0,
     };
 
-    onClickBtn = evt => {
+    onClickBtn = option => {
         this.setState(prevState => ({
-            [evt.target.name]: prevState[evt.target.name] + 1,
+            [option]: prevState[option] + 1,
         }));
     };
 
